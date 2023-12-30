@@ -1,21 +1,31 @@
-import { initReactI18next } from 'react-i18next';
-import i18n from 'i18next';
-import  LanguageDetector  from 'i18next-browser-languagedetector';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import arabicTranslation from './localJson/ar.json'
+import englsihTranslation from './localJson/en.json'
+import i18nextBrowserLanguagedetector from "i18next-browser-languagedetector";
 
-i18n.use(LanguageDetector)
+
+const resources = {
+  en: {
+    translation: 
+      englsihTranslation
+  },
+  ar: {
+    translation: 
+      arabicTranslation
+    
+  }
+};
+
+i18n
   .use(initReactI18next)
+  .use(i18nextBrowserLanguagedetector)
   .init({
-    resources: {
-      ar: {
-        translation: {
-          welcome: 'مرحبا',
-          hello: 'اهلا',
-        },
-      }
-    },
-    lng: 'ar', // Default language
-    fallbackLng: 'ar', // Fallback language
+    resources,
+    lng: "ar", 
     interpolation: {
-      escapeValue: false, // React already escapes strings
-    },
+      escapeValue: false 
+    }
   });
+
+  export default i18n;

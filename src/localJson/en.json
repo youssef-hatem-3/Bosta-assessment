@@ -1,3 +1,7 @@
 {
-    "title" : "Flowers"
+    "home": "Home",
+    "pricing": "Pricing",
+    "callsales": "Call sales",
+    "trackshipment ": "Trackshipment",
+    "SignUp": "Sign Up"
 }

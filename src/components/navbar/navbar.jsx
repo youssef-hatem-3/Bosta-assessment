@@ -32,7 +32,7 @@ const Navbar = () => {
         <>
             <nav className={`${navStyle.nav}`}>
                 <div className={`${navStyle.body} container  `}>
-                    <img className={`${navStyle.logo} me-3`} src={i18n.language == 'ar' ? arLogo : enLogo } alt="" />
+                    <img className={`${navStyle.logo} me-3`} src={i18n.language == 'ar' ? arLogo : enLogo} alt="" />
                     <ul className={`${navStyle.ul} m-0`} >
                         <li className={` ${navStyle.li} m-0 `}> {t('home')}  </li>
                         <li className={` ${navStyle.li} m-0 `}> {t('pricing')}  </li>
@@ -54,7 +54,7 @@ const Navbar = () => {
                             </div>
                         </li>
                         <li className={` ${navStyle.li} m-0 `}> {t('SignUp')}</li>
-                        <li onClick={i18n.language == 'ar' ? () => { i18n.changeLanguage('en');  } : () => { i18n.changeLanguage('ar');  }}
+                        <li onClick={i18n.language == 'ar' ? () => { i18n.changeLanguage('en'); toggleLayoutDirection(!isRTL)  } : () => { i18n.changeLanguage('ar'); toggleLayoutDirection(!isRTL)   }}
                             className={` ${navStyle.li} m-0 `}> <span className={`${navStyle.language}`}>Eng</span> </li>
                     </ul>
                     <div className={`${navStyle.togglerContainer} m-0`}  >

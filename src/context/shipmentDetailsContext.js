@@ -18,7 +18,6 @@ export default function ShipmentDetailContextProvider(props) {
             console.log(error);
         }
     }
-    console.log(arabictranslatedData);
     /********************************Function to get translatedData*****************************************/
     function arabictranslation(x) {
         let copyTransit = x.TransitEvents;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 .App {
   text-align: center;
 }
@@ -12,6 +13,14 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
+.RSPBprogressBar
+{
+  transform: scaleX(-1);
+}
+
+
 
 .App-header {
   background-color: #282c34;

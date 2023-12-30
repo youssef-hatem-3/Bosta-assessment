@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap');
+.body
+{
+    font-family: 'Cairo', sans-serif;
+}
+.emptyBody
+{
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+.maintable
+{
+    width: 100%;
+}
+.summery
+{
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+}
+
+.tableContainer
+{
+
+    height: 280px;
+    border: solid 2px rgba(0, 0, 0, 0.10) ;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.maintable > thead > tr > th
+{
+    background-color: rgba(0, 0, 0, 0.03) !important;
+    color: #909CB3 ;
+}
+.maintable > tbody > tr > td 
+{
+    color: black ;
+    padding: 15px ;
+}
+.address
+{
+    background-color: rgba(0, 0, 0, 0.03) !important;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.problem
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  rgba(0, 0, 0, 0.10) ;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.button
+{
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: 1px solid transparent ;
+}
+.infoHeader
+{
+    color: rgb(169, 169, 169);
+    padding-bottom: 10px;
+}
+.summeryTable > tbody > tr > td
+{
+    border: none;
+    text-align: center;
+}
+.info
+{
+    
+}
+@media screen and (max-width: 992px) {
+    .maintable
+    {
+        font-size: 10px;
+        
+    }
+  }

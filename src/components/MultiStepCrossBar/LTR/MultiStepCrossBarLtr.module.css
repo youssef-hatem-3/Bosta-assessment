@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+.body
+{
+    transform: rotateY(180deg);
+    font-family: 'Cairo', sans-serif;
+}
+.deliverd
+{
+    background-color: green;
+}
+.hallStep
+{
+    width: 100px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.step {
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+    background-color:white ;
+    border-radius: 50%;
+    border: 1px solid #CFCFCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stepIcon
+{
+    color: #CFCFCF;
+    font-size: 18px;
+}
+
+.stepTxt {
+    position: absolute;
+    width: 150px;
+    top: 80%;
+    left: 50%;
+    color: black;
+    font-size: 10px;
+    transform: translatex(-50%)
+}
+
+.bar 
+{
+    background-color:#7070703e ;
+    
+}

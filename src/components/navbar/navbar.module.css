@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap');
+
+.nav {
+  border-bottom: solid 1px #CFCFCF;
+  margin-bottom: 50px;
+}
+
+.body {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  color: #475467 !important;
+}
+
+.id {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+
+.ul {
+  color: black !important;
+}
+
+.li {
+  list-style: none;
+  display: inline-block;
+  color: black !important;
+  cursor: pointer;
+  padding: 0px 20px;
+}
+
+.logo {
+  width: 112px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.language {
+  color: red;
+  font-weight: 700 !important;
+}
+
+.togglerContainer {
+  display: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointera;
+}
+
+.trackUrShipment {
+  position: relative;
+  cursor: pointer;
+  padding: 20px 0px;
+}
+
+
+/************Rtl*******************/
+.trackUrShipmentBoxRtl {
+  display: none;
+  width: 250px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: solid 1px #CFCFCF;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top: none;
+  padding: 15px;
+  font-size: 12px;
+  cursor: default;
+  opacity: 0;
+}
+
+.trackUrShipment:hover > .trackUrShipmentBoxRtl {
+  display: block;
+  opacity: 100;
+}
+
+.trackUrShipment:hover > .trackUrShipmentBoxLtr {
+  display: block;
+  opacity: 100;
+}
+
+.trackUrShipment:hover>.trackUrShipment>.trackUrShipmentBoxLtr {
+  display: block;
+  opacity: 100;
+}
+
+.formContolRtl {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.formContolRtl:focus {
+  border: solid 1px #CFCFCF;
+}
+
+.formContolRtl::-webkit-outer-spin-button,
+.formContolRtl::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.searchIconRtl {
+  height: 100%;
+  background-color: #F4050D;
+  color: white;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  cursor: pointer;
+}
+
+/************ltr*******************/
+.trackUrShipmentBoxLtr {
+  display: none;
+  width: 250px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border: solid 1px #CFCFCF;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top: none;
+  padding: 15px;
+  font-size: 12px;
+  cursor: default;
+  opacity: 0;
+}
+
+.formContolLtr {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.formContolLtr:focus {
+  border: solid 1px #CFCFCF;
+}
+
+.formContolLtr::-webkit-outer-spin-button,
+.formContolLtr::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.searchIconLtr {
+  height: 100%;
+  background-color: #F4050D;
+  color: white;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    color: black !important;
+    z-index: 99999;
+
+  }
+
+  .nav {
+
+    margin-bottom: 100px;
+  }
+
+  .togglerContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .ul {
+    display: none;
+  }
+}
